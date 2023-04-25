@@ -20,4 +20,4 @@ SELECT DISTINCT `athletes`.`athlete_id` , `athletes`.`full_name` , COUNT(`result
 INNER JOIN `athletes` ON `athletes`.`athlete_id` = `results`.`athlete_id`
 GROUP BY `athlete_id`
 ORDER BY `counts` DESC
-LIMIT 2
+LIMIT 5
